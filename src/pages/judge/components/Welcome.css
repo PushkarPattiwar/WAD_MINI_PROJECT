@@ -1,0 +1,81 @@
+@keyframes pulsate {
+    0% {
+      background-color: black; /* Initial background color */
+    }
+    50% {
+      background-color:#87CEFA; /* Intermediate background color */
+    }
+    100% {
+      background-color: black; /* Final background color */
+    }
+  }
+  
+  @keyframes moveBackground {
+    0% {
+      background-position: 0 0; /* Initial background position */
+    }
+    100% {
+      background-position: 100% 100%; /* Final background position */
+    }
+  }
+  
+  @keyframes moveLogo {
+    0% {
+      transform: translateX(-10px); /* Initial horizontal position */
+    }
+    100% {
+      transform: translateX(10px); /* Final horizontal position */
+    }
+  }
+  
+  .welcome-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    animation: pulsate 10s infinite alternate; 
+  }
+  
+  .card {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    color: black;
+    max-width: 750px;
+    max-height: 900px;
+    width: 100%;
+    transition: transform 0.3s ease; 
+  }
+  
+  .card:hover {
+    transform: scale(1.02);
+  }
+  
+  .logo-containers {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; 
+    animation: moveLogo 5s infinite alternate; 
+  }
+  
+  .logo {
+    width: 100px; 
+    height: auto; 
+    transition: transform 0.3s ease; 
+  }
+  .swal-confirm-button {
+    background-color:skyblue !important; 
+    color: black !important; 
+    border-color:midnightblue;
+  }
+
+.swal2-icon.swal2-success .swal2-success-ring {
+    border: 4px solid skyblue; 
+}
+
+.swal2-icon.swal2-success [class^="swal2-success-line"] {
+    background-color: skyblue; 
+}
+  

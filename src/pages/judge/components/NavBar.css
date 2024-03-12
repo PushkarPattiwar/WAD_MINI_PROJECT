@@ -1,0 +1,100 @@
+/* Common styles for both mobile and desktop */
+
+nav {
+  font-family: 'YourPreferredFont', sans-serif;
+}
+
+.sidebar {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sidebar h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.sidebar li a {
+  text-decoration: none;
+  color: white;
+  position: relative;
+}
+
+.sidebar li a:hover {
+  text-decoration: none;
+  color: #FFD700;
+}
+
+.sidebar li a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: #FFD700;
+  transition: width 0.3s ease;
+  transform: scaleX(0);
+  transform-origin: bottom left;
+}
+
+.sidebar li a.active::after {
+  transform: scaleX(1);
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+  margin-right: 10px;
+}
+
+.sidebar li:nth-child(4) a {
+  font-weight: bold;
+  color: #FFD700;
+}
+
+/* Responsive styles for mobile */
+@media screen and (max-width: 768px) {
+  .sidebar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .sidebar ul {
+    flex-direction: column;
+  }
+
+  .sidebar li {
+    margin-bottom: 8px;
+  }
+
+  .sidebar h1 {
+    font-size: 20px;
+  }
+
+  .sidebar li a {
+    font-size: 16px;
+  }
+}

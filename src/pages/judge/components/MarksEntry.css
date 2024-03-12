@@ -1,0 +1,52 @@
+/* .marks-entry-container {
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color:white;
+    color: black;
+    text-align: center;
+  }
+  
+  .marks-entry-container h2 {
+    margin-top: 0;
+  }
+  
+  .marks-entry-container p {
+    margin-bottom: 20px;
+  }
+  
+  .marks-entry-container form {
+    margin: 5% auto;
+    text-align: center; 
+  }
+  
+
+  @keyframes marquee {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+  
+  .moving-text {
+    white-space: nowrap;
+    overflow: hidden;
+    animation: marquee 10s linear infinite;
+
+  }
+  
+  .moving-text  {
+    font-weight: bold;
+    font-size: 94%;
+  }
+  
+  
+  .entry-heading {
+    margin-top: 0;
+  }
+  
+  .marks-table {
+    margin: auto;
+    display:block; 
+  }
+   */
